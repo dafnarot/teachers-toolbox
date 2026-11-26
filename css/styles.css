@@ -336,3 +336,4 @@ h1, h2, h3 { line-height: 1.25; margin: 0; }
   .about-logo { width: 64px; height: 64px; }
   .about-text p { font-size: 15.5px; }
 }
+.lead .lead-tag { display: block; margin-top: 10px; font-weight: 700; color: #fff; }
