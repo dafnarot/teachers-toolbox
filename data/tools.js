@@ -26,7 +26,7 @@ window.TOOLS_DATA = {
     { "id": "videos", "name": "וידאו ושמע", "tagline": "סרטונים, פודקאסטים, הקראה ושירים", "icon": "ti-movie", "color": "#E24B4A", "tint": "#FCEBEB", "ink": "#791F1F", "order": 4 },
     { "id": "quizzes", "name": "חידונים ומשחקים", "tagline": "בחנים, משחקי למידה ומשוב", "icon": "ti-puzzle", "color": "#EF9F27", "tint": "#FDF3E2", "ink": "#633806", "order": 5 },
     { "id": "worksheets", "name": "דפי עבודה ותכנון הוראה", "tagline": "מערכי שיעור, דפי עבודה ומחוונים", "icon": "ti-file-pencil", "color": "#639922", "tint": "#EEF6E4", "ink": "#27500A", "order": 6 },
-    { "id": "spaces", "name": "מרחבי למידה ושיתוף", "tagline": "לוחות, כיתות ואתרים שיתופיים", "icon": "ti-users-group", "color": "#1D9E75", "tint": "#E1F5EE", "ink": "#085041", "order": 7 },
+    { "id": "spaces", "name": "לוחות שיתופיים ומרחבי למידה", "tagline": "לוחות, כיתות ואתרים שיתופיים", "icon": "ti-users-group", "color": "#1D9E75", "tint": "#E1F5EE", "ink": "#085041", "order": 7 },
     { "id": "building", "name": "בניית אתרים ואפליקציות", "tagline": "אתרים וכלים אינטראקטיביים מתיאור", "icon": "ti-code", "color": "#4B4FA8", "tint": "#E8E9F7", "ink": "#2B2E6E", "order": 8 }
   ],
 
@@ -130,7 +130,7 @@ window.TOOLS_DATA = {
         { "id": "spaces", "highlight": "לוח לבן שיתופי ומשימות לתלמידים", "example": "לוח סיעור מוחות קבוצתי שממנו התלמידים מעצבים פוסטר מסכם" },
         { "id": "building", "highlight": "Canva Code – כלי אינטראקטיבי או אתר מתיאור", "example": "משחק זיכרון אינטראקטיבי שמוטמע במצגת" }
       ],
-      "keywords": ["קנבה", "עיצוב", "מצגת", "פוסטר", "דף עבודה", "אינפוגרפיקה", "תעודה", "הזמנה", "סרטון", "תבניות", "קנבה קוד"],
+      "keywords": ["קנבה", "עיצוב", "מצגת", "פוסטר", "דף עבודה", "אינפוגרפיקה", "תעודה", "הזמנה", "סרטון", "תבניות", "קנבה קוד", "לוח שיתופי", "לוח לבן", "סיעור מוחות"],
       "access": {
         "summary": "Canva for Education חינמי למורים מאומתים בבתי ספר (יסודי עד תיכון). כלי AI מסוימים מוגבלים או מוגדרים כתוספים.",
         "verifiedOn": "2026-11-22",
@@ -446,25 +446,6 @@ window.TOOLS_DATA = {
       "note": ""
     },
     {
-      "id": "magicschool",
-      "name": "MagicSchool",
-      "url": "https://www.magicschool.ai",
-      "isGoogle": false,
-      "description": "פלטפורמת AI ייעודית למורים עם עשרות כלים מוכנים.",
-      "capabilities": ["מערכי שיעור", "מחוונים", "יצירת שאלות וחידונים", "התאמות לתלמידים", "משוב על כתיבה", "מכתבים להורים", "צ'אטבוט Raina"],
-      "categories": [
-        { "id": "worksheets", "highlight": "מערכי שיעור, מחוונים והתאמות", "example": "מחוון לעבודת חקר והתאמת משימה לתלמיד עם לקות למידה" },
-        { "id": "quizzes", "highlight": "מחולל חידונים ושאלות", "example": "בוחן קצר על טקסט שהודבק" }
-      ],
-      "keywords": ["מג'יק סקול", "מערך שיעור", "מחוון", "התאמות", "לקויות למידה", "משוב", "מכתב להורים"],
-      "access": {
-        "summary": "גרסה חינמית למורים עם יותר מ-80 כלים; בהרשמה ניתנת תקופת ניסיון לגרסת Plus.",
-        "verifiedOn": "2026-11-22",
-        "sources": ["https://www.magicschool.ai/pricing"]
-      },
-      "note": ""
-    },
-    {
       "id": "perplexity",
       "name": "Perplexity",
       "url": "https://www.perplexity.ai",
@@ -587,7 +568,7 @@ window.TOOLS_DATA = {
       "categories": [
         { "id": "building", "highlight": "אפליקציה מלאה מתיאור", "example": "אתר תיק עבודות כיתתי" }
       ],
-      "keywords": ["לאבבל", "אפליקציה", "אתר", "ללא קוד", "בנייה"],
+      "keywords": ["לאבבל", "אפליקציה", "אתר", "ללא קוד", "בנייה", "vibe coding", "וייב קודינג"],
       "access": {
         "summary": "גרסה חינמית עם קרדיטים יומיים ומגבלה חודשית.",
         "verifiedOn": "2026-11-22",
@@ -605,7 +586,7 @@ window.TOOLS_DATA = {
       "categories": [
         { "id": "building", "highlight": "אפליקציה אינטראקטיבית מתיאור", "example": "סימולציה אינטראקטיבית לניסוי בפיזיקה" }
       ],
-      "keywords": ["AI סטודיו", "אפליקציה", "סימולציה", "גוגל", "ג'מיני", "בנייה"],
+      "keywords": ["AI סטודיו", "אפליקציה", "סימולציה", "גוגל", "ג'מיני", "בנייה", "vibe coding", "וייב קודינג"],
       "access": {
         "summary": "חינמי עם חשבון Google, במכסות. מיועד לבני 18 ומעלה.",
         "personalAccount": "חינמי במכסות.",
