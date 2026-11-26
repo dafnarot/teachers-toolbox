@@ -1,0 +1,55 @@
+/* Dark background version (navy-purple from the logo text).
+   Active when <html> has the class "theme-dark". Cards and the details
+   window stay white so tool text keeps the same contrast. */
+.theme-dark {
+  --bg: #1D1F4F;
+  --band: #24275E;
+  --on-dark: #FFFFFF;
+  --on-dark-soft: #C9CBF0;
+  --on-dark-line: rgba(255, 255, 255, .14);
+}
+.theme-dark body { background: var(--bg); }
+
+/* Header */
+.theme-dark .site-header { background: rgba(29, 31, 79, .88); border-bottom-color: var(--on-dark-line); }
+.theme-dark .brand-text strong { color: var(--on-dark); }
+.theme-dark .brand-text small { color: var(--on-dark-soft); }
+.theme-dark .header-nav a { color: var(--on-dark-soft); }
+.theme-dark .header-nav a:hover { background: rgba(255, 255, 255, .1); color: var(--on-dark); }
+
+/* Hero */
+.theme-dark .hero::before {
+  background:
+    radial-gradient(520px 360px at 12% 35%, rgba(142, 111, 216, .35), transparent 70%),
+    radial-gradient(520px 380px at 90% 30%, rgba(63, 182, 188, .28), transparent 70%),
+    radial-gradient(420px 260px at 75% 95%, rgba(127, 182, 234, .18), transparent 70%);
+}
+.theme-dark .hero h1 { color: var(--on-dark); }
+.theme-dark .hero h1 .highlight { color: #B9A6EC; }
+.theme-dark .hero h1 .highlight::after { background: linear-gradient(90deg, rgba(91, 196, 200, .45), rgba(142, 111, 216, .45)); }
+.theme-dark .lead, .theme-dark .quick { color: var(--on-dark-soft); }
+.theme-dark .eyebrow { background: rgba(255, 255, 255, .1); border-color: var(--on-dark-line); color: var(--on-dark); box-shadow: none; }
+.theme-dark .eyebrow .ti { color: #7FDCE0; }
+.theme-dark .quick button { background: rgba(255, 255, 255, .08); border-color: var(--on-dark-line); color: var(--on-dark); }
+.theme-dark .quick button:hover { background: rgba(255, 255, 255, .18); border-color: #B9A6EC; }
+.theme-dark .search input { border-color: transparent; }
+.theme-dark .hero-logo { filter: drop-shadow(0 12px 28px rgba(0, 0, 0, .35)); }
+
+/* Section headings on the dark background */
+.theme-dark .section-head h2, .theme-dark .tools-head h2 { color: var(--on-dark); }
+.theme-dark .section-head p, .theme-dark .tools-head p, .theme-dark .result-count, .theme-dark .muted { color: var(--on-dark-soft); }
+.theme-dark .tool-card .muted, .theme-dark .tool-dialog .muted { color: var(--muted); }
+
+/* Filter bar */
+.theme-dark .filter-bar { background: rgba(29, 31, 79, .9); border-bottom-color: var(--on-dark-line); }
+.theme-dark .chip { background: rgba(255, 255, 255, .08); border-color: var(--on-dark-line); color: var(--on-dark); }
+.theme-dark .chip:hover { border-color: rgba(255, 255, 255, .35); color: var(--on-dark); }
+.theme-dark .chip[aria-pressed="true"] { background: var(--cat-tint); border-color: var(--cat); color: var(--cat-ink); }
+
+/* Cards keep white surfaces; drop the light hairline so they sit cleanly on navy */
+.theme-dark .cat-card, .theme-dark .tool-card, .theme-dark .about-card { border-color: transparent; }
+
+/* Empty state, footer */
+.theme-dark .empty { color: var(--on-dark-soft); }
+.theme-dark .site-footer { border-top-color: var(--on-dark-line); }
+.theme-dark .footer-inner { color: var(--on-dark-soft); }

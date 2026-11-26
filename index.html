@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="he" dir="rtl" class="theme-dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ארגז כלים דיגיטליים חכמים למורים | הוראה חכמה בעידן ה-AI</title>
+  <meta name="description" content="מאגר כלים דיגיטליים וכלי AI למורים: מצגות, חידונים, דפי עבודה, סרטונים, משחקים ועוד – עם דוגמאות להוראה.">
+  <link rel="icon" href="assets/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/theme-dark.css"></head>
+<body>
+  <a class="skip-link" href="#tools">דלג לכלים</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#" aria-label="לדף הבית">
+        <img src="assets/logo.webp" alt="" width="44" height="44">
+        <span class="brand-text">
+          <strong>ארגז כלים דיגיטליים חכמים</strong>
+          <small>הוראה חכמה בעידן ה-AI</small>
+        </span>
+      </a>
+      <nav class="header-nav" aria-label="ניווט ראשי">
+        <a href="#categories">קטגוריות</a>
+        <a href="#tools">כל הכלים</a>
+        <a href="#about">נעים להכיר</a>
+        <a href="#notes">לפני שמתחילים</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="pixel p1"></span><span class="pixel p2"></span><span class="pixel p3"></span>
+        <span class="pixel p4"></span><span class="pixel p5"></span><span class="pixel p6"></span>
+        <span class="pixel p7"></span><span class="pixel p8"></span>
+      </div>
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow"><i class="ti ti-sparkles" aria-hidden="true"></i> <span id="tool-count">30</span> כלים נבחרים למורים בישראל</p>
+          <h1 id="hero-title">ארגז כלים דיגיטליים <span class="highlight">חכמים</span> למורים</h1>
+          <p class="lead">אספתי עבורכם את הכלים הדיגיטליים שהכי שווה להכיר, עם דוגמאות מהכיתה ומידע ברור על תנאי השימוש. כי מורים לא צריכים לעבוד קשה יותר, אלא חכם יותר.</p>
+
+          <form class="search" role="search" onsubmit="return false">
+            <label for="search-input" class="sr-only">חיפוש כלי לפי צורך</label>
+            <i class="ti ti-search search-icon" aria-hidden="true"></i>
+            <input id="search-input" type="search" autocomplete="off" placeholder="מה תרצו להכין היום?">
+            <button type="button" class="search-clear" id="search-clear" aria-label="ניקוי החיפוש" hidden><i class="ti ti-x" aria-hidden="true"></i></button>
+          </form>
+          <a href="#tools" class="search-hint" id="search-hint" hidden></a>
+          <div class="quick" aria-label="חיפושים מהירים">
+            <span>חיפושים נפוצים:</span>
+            <button type="button" data-q="חידון">חידון</button>
+            <button type="button" data-q="פודקאסט">פודקאסט</button>
+            <button type="button" data-q="דף עבודה">דף עבודה</button>
+            <button type="button" data-q="מצגת">מצגת</button>
+            <button type="button" data-q="חדר בריחה">חדר בריחה</button>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <img src="assets/logo.webp" alt="" class="hero-logo" width="300" height="300">
+        </div>
+      </div>
+    </section>
+
+    <section id="categories" class="section" aria-labelledby="cat-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="cat-title">במה תרצו להיעזר?</h2>
+          <p>בחרו קטגוריה – וכל כלי יוצג עם השימוש שמתאים לה.</p>
+        </div>
+        <div class="cat-grid" id="cat-grid"></div>
+      </div>
+    </section>
+
+    <section id="tools" class="section tools-section" aria-labelledby="tools-title">
+      <div class="filter-bar">
+        <div class="container filter-inner">
+          <div class="chips" id="chips" role="toolbar" aria-label="סינון לפי קטגוריה"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="tools-head" id="tools-head">
+          <div>
+            <h2 id="tools-title">כל הכלים</h2>
+            <p id="tools-sub" class="muted"></p>
+          </div>
+          <p class="result-count" id="result-count" aria-live="polite"></p>
+        </div>
+        <div class="tool-grid" id="tool-grid"></div>
+        <div class="empty" id="empty" hidden>
+          <i class="ti ti-mood-search" aria-hidden="true"></i>
+          <p id="empty-text">לא נמצאו כלים מתאימים.</p>
+          <button type="button" class="btn btn-soft" id="empty-action">חיפוש בכל הקטגוריות</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about-card">
+          <img src="assets/logo.webp" alt="" class="about-logo" width="96" height="96">
+          <div class="about-text">
+            <h2 id="about-title">נעים להכיר, אני דפנה רוט</h2>
+            <p class="about-role">מורת מורים ומנחת סדנאות על Canva, בינה מלאכותית וכלים דיגיטליים.</p>
+            <p>את הכלים במאגר בחרתי בקפידה: כלים מוכרים, נגישים ושימושיים באמת בעבודה היומיומית של מורים.</p>
+            <p>בקבוצות שלי אני משתפת רעיונות לפעילויות, טיפים לעבודה עם AI ועדכונים על כלים חדשים. מוזמנים להצטרף!</p>
+            <div class="about-links" id="about-links"></div>
+            <p class="about-sign">דפנה רוט · הוראה חכמה בעידן ה-AI</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="notes" class="section notes" aria-labelledby="notes-title">
+      <div class="container">
+        <div class="notes-card">
+          <h2 id="notes-title"><i class="ti ti-info-circle" aria-hidden="true"></i> לפני שמתחילים</h2>
+          <ul id="notes-list"></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <img src="assets/logo.webp" alt="" width="36" height="36">
+      <p>הוראה חכמה בעידן ה-AI · <span id="last-updated"></span></p>
+    </div>
+  </footer>
+
+  <dialog id="tool-dialog" class="tool-dialog" aria-labelledby="dlg-title">
+    <div class="dlg-inner" id="dlg-inner"></div>
+  </dialog>
+
+  <noscript><p class="noscript">יש לאפשר JavaScript כדי להציג את מאגר הכלים.</p></noscript>
+  <script src="data/tools.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
