@@ -11,6 +11,7 @@ window.TOOLS_DATA = {
       { "name": "הוראה חכמה בעידן ה-AI", "subtitle": "קבוצת הפייסבוק שלי", "type": "facebook", "url": "https://www.facebook.com/groups/dafnarot" }
     ],
     "allMyLinks": "https://files.instinct.com/n2vq9elgv2pn",
+    "visitCounter": "https://dafnarot.goatcounter.com",
     "generalNotes": [
       "הכלים במאגר מיועדים לשימוש מורים. לפני שימוש תלמידים בכלי כלשהו, על המורה לבדוק את הגבלות הגיל לשימוש תלמידים באתר משרד החינוך.",
       "תנאי השימוש החינמי (מכסות, קרדיטים, מגבלות) שונים מכלי לכלי ומשתנים מעת לעת. המידע במאגר נבדק בתאריך המצוין לכל כלי.",

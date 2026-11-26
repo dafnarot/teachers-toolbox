@@ -337,3 +337,9 @@ h1, h2, h3 { line-height: 1.25; margin: 0; }
   .about-text p { font-size: 15.5px; }
 }
 .lead .lead-tag { display: block; margin-top: 10px; font-weight: 700; color: #fff; }
+.visit-counter { margin-inline-start: auto; display: flex; align-items: center; gap: 10px; }
+.visit-counter[hidden] { display: none; }
+.visit-counter small { font-size: 13px; }
+.visit-counter .digits { display: inline-flex; gap: 3px; padding: 4px; border-radius: 10px; background: #12143A; box-shadow: inset 0 0 0 1px rgba(142, 111, 216, .45); }
+.visit-counter .digits span { min-width: 22px; padding: 3px 0; text-align: center; border-radius: 6px; background: #1D1F4F; font: 700 18px/1 "Courier New", ui-monospace, monospace; color: #5FE0B4; text-shadow: 0 0 6px rgba(95, 224, 180, .6); }
+@media (max-width: 600px) { .footer-inner { flex-wrap: wrap; } .visit-counter { margin-inline-start: 0; } }

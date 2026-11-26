@@ -315,6 +315,22 @@
       : '';
     $('#about-links').innerHTML = groups ? `<div class="group-grid">${groups}</div>${all}` : all;
     if (m.lastUpdated) $('#last-updated').textContent = 'המאגר עודכן לאחרונה ב-' + new Date(m.lastUpdated).toLocaleDateString('he-IL');
+    renderVisits(m.visitCounter);
+  }
+
+  // Public visit total from GoatCounter. Stays hidden if the counter is off or unreachable.
+  async function renderVisits(base) {
+    const box = $('#visit-counter');
+    if (!base || !box) return;
+    try {
+      const res = await fetch(base.replace(/\/+$/, '') + '/counter/TOTAL.json');
+      if (!res.ok) return;
+      const digits = String((await res.json()).count || '').replace(/\D/g, '');
+      if (!digits) return;
+      const cells = digits.padStart(5, '0').split('').map((d) => `<span>${d}</span>`).join('');
+      box.innerHTML = `<small>כניסות לאתר</small><span class="digits" dir="ltr">${cells}</span>`;
+      box.hidden = false;
+    } catch (e) { /* counter is optional */ }
   }
 
   async function init() {
