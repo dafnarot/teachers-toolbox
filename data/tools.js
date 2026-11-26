@@ -27,7 +27,7 @@ window.TOOLS_DATA = {
     { "id": "quizzes", "name": "חידונים ומשחקים", "tagline": "בחנים, משחקי למידה ומשוב", "icon": "ti-puzzle", "color": "#EF9F27", "tint": "#FDF3E2", "ink": "#633806", "order": 5 },
     { "id": "worksheets", "name": "דפי עבודה ותכנון הוראה", "tagline": "מערכי שיעור, דפי עבודה ומחוונים", "icon": "ti-file-pencil", "color": "#639922", "tint": "#EEF6E4", "ink": "#27500A", "order": 6 },
     { "id": "spaces", "name": "לוחות שיתופיים ומרחבי למידה", "tagline": "לוחות, כיתות ואתרים שיתופיים", "icon": "ti-users-group", "color": "#1D9E75", "tint": "#E1F5EE", "ink": "#085041", "order": 7 },
-    { "id": "building", "name": "בניית אתרים ואפליקציות", "tagline": "אתרים וכלים אינטראקטיביים מתיאור", "icon": "ti-code", "color": "#4B4FA8", "tint": "#E8E9F7", "ink": "#2B2E6E", "order": 8 }
+    { "id": "building", "name": "Vibe Coding: אתרים ואפליקציות", "tagline": "אתרים, משחקים וכלים אינטראקטיביים מתיאור במילים", "icon": "ti-code", "color": "#4B4FA8", "tint": "#E8E9F7", "ink": "#2B2E6E", "order": 8 }
   ],
 
   "tools": [
