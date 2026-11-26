@@ -10,7 +10,7 @@ window.TOOLS_DATA = {
       { "name": "הקסם של קנבה עם דפנה", "type": "whatsapp", "url": "https://chat.whatsapp.com/CFXXUFvnaDQJzHRbqur7cp" },
       { "name": "הוראה יצירתית עם דפנה", "type": "whatsapp", "url": "https://chat.whatsapp.com/DjB1AfZrg8YDAWnFtm6Ie0" }
     ],
-    "allMyLinks": "https://linktr.ee/dafnarot",
+    "allMyLinks": "https://files.instinct.com/n2vq9elgv2pn",
     "generalNotes": [
       "הכלים במאגר מיועדים לשימוש מורים. לפני שימוש תלמידים בכלי כלשהו, על המורה לבדוק את הגבלות הגיל לשימוש תלמידים באתר משרד החינוך.",
       "תנאי השימוש החינמי (מכסות, קרדיטים, מגבלות) שונים מכלי לכלי ומשתנים מעת לעת. המידע במאגר נבדק בתאריך המצוין לכל כלי.",
