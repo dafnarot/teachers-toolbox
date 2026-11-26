@@ -5,10 +5,10 @@ window.TOOLS_DATA = {
     "version": "1.0",
     "lastUpdated": "2026-11-26",
     "myGroups": [
-      { "name": "הוראה חכמה בעידן ה-AI", "type": "whatsapp", "url": "https://chat.whatsapp.com/LRYpWU937uF8WR7eBZISw1" },
-      { "name": "הוראה חכמה בעידן ה-AI", "type": "facebook", "url": "https://www.facebook.com/groups/dafnarot" },
-      { "name": "הקסם של קנבה עם דפנה", "type": "whatsapp", "url": "https://chat.whatsapp.com/CFXXUFvnaDQJzHRbqur7cp" },
-      { "name": "הוראה יצירתית עם דפנה", "type": "whatsapp", "url": "https://chat.whatsapp.com/DjB1AfZrg8YDAWnFtm6Ie0" }
+      { "name": "הוראה חכמה בעידן ה-AI", "subtitle": "הקבוצה הסגורה - בינה מלאכותית בהוראה", "type": "whatsapp", "url": "https://chat.whatsapp.com/LRYpWU937uF8WR7eBZISw1" },
+      { "name": "הקסם של קנבה עם דפנה", "subtitle": "קהילת וואטסאפ - כל הקסמים של קנבה", "type": "whatsapp", "url": "https://chat.whatsapp.com/CFXXUFvnaDQJzHRbqur7cp" },
+      { "name": "הוראה חכמה בעידן ה-AI", "subtitle": "הקבוצה הפתוחה - לשאלות והתייעצויות", "type": "whatsapp", "url": "https://chat.whatsapp.com/DjB1AfZrg8YDAWnFtm6Ie0" },
+      { "name": "הוראה חכמה בעידן ה-AI", "subtitle": "קבוצת הפייסבוק שלי", "type": "facebook", "url": "https://www.facebook.com/groups/dafnarot" }
     ],
     "allMyLinks": "https://files.instinct.com/n2vq9elgv2pn",
     "generalNotes": [

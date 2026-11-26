@@ -307,11 +307,11 @@
       const p = platform[g.type] || { icon: 'ti-users-group', label: 'קבוצה' };
       return `<a class="group-link is-${esc(g.type)}" href="${esc(g.url)}" target="_blank" rel="noopener">
         <i class="ti ${p.icon}" aria-hidden="true"></i>
-        <span><strong>${esc(g.name)}</strong><small>${p.label}</small></span>
+        <span><strong>${esc(g.name)}</strong><small>${esc(g.subtitle || p.label)}</small></span>
       </a>`;
     }).join('');
     const all = m.allMyLinks
-      ? `<a class="btn btn-soft all-links" href="${esc(m.allMyLinks)}" target="_blank" rel="noopener"><i class="ti ti-link" aria-hidden="true"></i> כל הקישורים שלי</a>`
+      ? `<a class="btn btn-soft all-links" href="${esc(m.allMyLinks)}" target="_blank" rel="noopener"><i class="ti ti-link" aria-hidden="true"></i> עוד מקומות לפגוש אותי</a>`
       : '';
     $('#about-links').innerHTML = groups ? `<div class="group-grid">${groups}</div>${all}` : all;
     if (m.lastUpdated) $('#last-updated').textContent = 'המאגר עודכן לאחרונה ב-' + new Date(m.lastUpdated).toLocaleDateString('he-IL');
